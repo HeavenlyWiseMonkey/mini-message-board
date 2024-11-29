@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="title"><%= title %></h1>
+        <% let i=0 %>
+        <% messages.forEach((message) => { %>
+            <div class="message">
+                <p class="user"><%= message.user %></p>
+                <p class="messageText"><%= message.text %></p>
+                <a href="/message-details/<%= i %>" id="<%= i %>">Message Details</a>
+            </div>
+            <% i++ %>
+        <% }) %>
+        <a class="newMessage" href="/new">New Message</a>
+    </body>
+</html>

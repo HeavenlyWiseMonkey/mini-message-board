@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.title, .newMessage {
+    margin-left: 30px;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.message {
+    border-top: 1px solid black;
+    padding: 30px;
+}
+
+.message:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.message > * {
+    margin-bottom: 10px;
+}
+
+.user {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.messageText {
+    font-size: 1rem;
+}
+
+.newMessage {
+    font-size: 1.2rem;
+}
+
+.form {
+    display: table;
+}
+
+.form > div > * {
+    display: table-cell;
+}
+
+.form > *, .messageDetails > * {
+    margin-bottom: 20px;
+}
+
+.form > button {
+    font-size: 1.2rem;
+}
+
+.messageDetails > * {
+    font-size: 1.2rem;
+}
+
+.detail {
+    font-weight: bold;
+}
