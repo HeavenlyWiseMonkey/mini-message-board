@@ -7,7 +7,7 @@
         <% let i=0 %>
         <% messages.forEach((message) => { %>
             <div class="message">
-                <p class="user"><%= message.user %></p>
+                <p class="user"><%= message.username %></p>
                 <p class="messageText"><%= message.text %></p>
                 <a href="/message-details/<%= i %>" id="<%= i %>">Message Details</a>
             </div>
